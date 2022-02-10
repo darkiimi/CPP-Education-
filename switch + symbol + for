@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int count, lines;
+    string sym, horizontal;
+    cout << "Введите ваш символ" << endl;
+    cin >> sym;
+    cout << "Какое количество символов хотите вывести?" << endl;
+    cin >> count;
+    cout << "Какая линия?" << endl <<
+            "1. Г" << endl << 
+            "2. В" << endl;
+    cin >> lines;
+    switch(lines)
+    {
+      case 1:
+        for (int i = 0; i < count; i++)
+        {
+          horizontal += sym;
+        }
+        cout << horizontal << endl;;
+        break;
+      case 2:
+        for (int i = 0; i < count; i++)
+        {
+          cout << sym << endl;
+        }
+        break;
+      default:
+        cout << "Такой опции нет.";
+        break;
+    }
+}
