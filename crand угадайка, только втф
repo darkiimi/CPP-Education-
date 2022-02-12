@@ -1,0 +1,27 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+  int a = 11;
+  int tries;
+  
+  int number;
+  cout << "Проверим твою удачу, выбери число от 0 до 9, посмотрим через сколько попыток машина отгадает" << endl;
+  
+  cin >> number;
+
+  while (true)
+  {
+    srand(time(NULL));
+    tries += 1;
+    a = rand() % 10;
+    if (number == a)
+    {
+      break;
+    }
+    cout << a << endl;
+  }
+  
+  cout << "Ура, у тебя заняло " << tries << " попыток" << endl;
+}
