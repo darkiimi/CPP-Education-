@@ -1,0 +1,23 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+ 
+void lol()
+{
+  cout << "LOLLL" << endl;
+}
+
+int sum(int a, int b)
+{
+  int result;
+  
+  return result = a + b;
+}
+
+int main()
+{
+  lol();
+  lol();
+
+  cout << sum(4,6);
+}
