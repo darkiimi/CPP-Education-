@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+
+void sus(int *pa)
+{
+  (*pa)++;
+}
+
+int main()
+{
+  int a = 1;
+  cout << a << endl;
+  sus(&a);
+  cout << a << endl;
+
+}
